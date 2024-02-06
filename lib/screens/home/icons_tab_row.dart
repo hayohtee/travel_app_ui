@@ -20,6 +20,7 @@ class _IconsTabRowState extends State<IconsTabRow> {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
+      padding: const EdgeInsets.symmetric(horizontal: 16.0),
       scrollDirection: Axis.horizontal,
       itemCount: _icons.length,
       itemBuilder: (context, index) {
