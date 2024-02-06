@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'destinations_section.dart';
 import 'icons_tab_row.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -10,13 +11,10 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: ListView(
-          padding: const EdgeInsets.symmetric(
-            vertical: 30.0,
-            horizontal: 16.0,
-          ),
+          padding: const EdgeInsets.symmetric(vertical: 30.0),
           children: const [
             Padding(
-              padding: EdgeInsets.only(right: 20.0),
+              padding: EdgeInsets.only(left: 16.0, right: 20.0),
               child: Text(
                 'What would you like to find?',
                 style: TextStyle(
@@ -26,7 +24,9 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             SizedBox(height: 20.0),
-            SizedBox(height: 60, child: IconsTabRow())
+            SizedBox(height: 60, child: IconsTabRow()),
+            SizedBox(height: 16),
+            DestinationSection()
           ],
         ),
       ),
