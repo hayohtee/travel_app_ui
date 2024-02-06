@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:travel_app_ui/screens/home_screen.dart';
 
 void main() {
   runApp(const MainApp());
@@ -19,6 +20,7 @@ class MainApp extends StatelessWidget {
         ),
         scaffoldBackgroundColor: const Color(0xFFF3F5F7),
       ),
+      home: const HomeScreen(),
     );
   }
 }
